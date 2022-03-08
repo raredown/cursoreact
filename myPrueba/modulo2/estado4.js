@@ -1,15 +1,15 @@
 import React from 'react';
 import {Text,View} from 'react-native';
 class MyComponent extends React.Component {
-state = {
- year: 2016,
- name: 'Nader Dabit',
- colors: ['blue']
+
+   constructor(){
+ super()
+ this.state = {
+ year: 2016
+ }
  }
   updateYear() {
-this.setState({
- year: 2017
- })
+ this.state.year = 2017
  }
 update() {
  this.forceUpdate()
